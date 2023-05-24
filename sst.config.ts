@@ -1,5 +1,5 @@
 import { SSTConfig } from 'sst'
-import { CdkToSstStack } from './lib/CdkToSstStack'
+import { Main } from './lib/main'
 
 export default {
   config(_input) {
@@ -10,6 +10,6 @@ export default {
     }
   },
   stacks(app) {
-    app.stack(CdkToSstStack)
+    app.stack(Main)
   }
 } satisfies SSTConfig

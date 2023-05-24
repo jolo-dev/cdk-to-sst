@@ -1,0 +1,167 @@
+{
+  "version": "31.0.0",
+  "artifacts": {
+    "jolocdktosstMainCdkToSstStackB4EE5D75.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "jolocdktosstMainCdkToSstStackB4EE5D75.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "jolocdktosstMainCdkToSstStackB4EE5D75": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://191282919495/eu-central-1",
+      "properties": {
+        "templateFile": "jolocdktosstMainCdkToSstStackB4EE5D75.template.json",
+        "tags": {
+          "sst:app": "cdk-to-sst",
+          "sst:stage": "jolo"
+        },
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::191282919495:role/cdk-hnb659fds-deploy-role-191282919495-eu-central-1",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::191282919495:role/cdk-hnb659fds-cfn-exec-role-191282919495-eu-central-1",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-191282919495-eu-central-1/068c79dafa2af5adf78fd95b048f2a87ed2893c8929c1fdac7cad14e1353eb46.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "jolocdktosstMainCdkToSstStackB4EE5D75.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::191282919495:role/cdk-hnb659fds-lookup-role-191282919495-eu-central-1",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        }
+      },
+      "dependencies": [
+        "jolocdktosstMainCdkToSstStackB4EE5D75.assets"
+      ],
+      "metadata": {
+        "/jolo-cdk-to-sst-Main/CdkToSstStack": [
+          {
+            "type": "aws:cdk:stack-tags",
+            "data": [
+              {
+                "Key": "sst:app",
+                "Value": "cdk-to-sst"
+              },
+              {
+                "Key": "sst:stage",
+                "Value": "jolo"
+              }
+            ]
+          }
+        ],
+        "/jolo-cdk-to-sst-Main/CdkToSstStack/CdkToSstQueue/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CdkToSstQueue5C0743AF"
+          }
+        ],
+        "/jolo-cdk-to-sst-Main/CdkToSstStack/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/jolo-cdk-to-sst-Main/CdkToSstStack/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "jolo-cdk-to-sst-Main/CdkToSstStack"
+    },
+    "jolo-cdk-to-sst-Main.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "jolo-cdk-to-sst-Main.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "jolo-cdk-to-sst-Main": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://191282919495/eu-central-1",
+      "properties": {
+        "templateFile": "jolo-cdk-to-sst-Main.template.json",
+        "tags": {
+          "sst:app": "cdk-to-sst",
+          "sst:stage": "jolo"
+        },
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::191282919495:role/cdk-hnb659fds-deploy-role-191282919495-eu-central-1",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::191282919495:role/cdk-hnb659fds-cfn-exec-role-191282919495-eu-central-1",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-191282919495-eu-central-1/fe709cd015145b948798976f10c276881f6cb93b4d7fb00584c4ebf748b69c21.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "jolo-cdk-to-sst-Main.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::191282919495:role/cdk-hnb659fds-lookup-role-191282919495-eu-central-1",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        }
+      },
+      "dependencies": [
+        "jolo-cdk-to-sst-Main.assets"
+      ],
+      "metadata": {
+        "/jolo-cdk-to-sst-Main": [
+          {
+            "type": "aws:cdk:stack-tags",
+            "data": [
+              {
+                "Key": "sst:app",
+                "Value": "cdk-to-sst"
+              },
+              {
+                "Key": "sst:stage",
+                "Value": "jolo"
+              }
+            ]
+          }
+        ],
+        "/jolo-cdk-to-sst-Main/CustomResourceHandler/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomResourceHandlerServiceRole41AEC181"
+          }
+        ],
+        "/jolo-cdk-to-sst-Main/CustomResourceHandler/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomResourceHandlerE8FB56BA"
+          }
+        ],
+        "/jolo-cdk-to-sst-Main/SSTStackOutputSSTMetadata": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SSTMetadata"
+          }
+        ],
+        "/jolo-cdk-to-sst-Main/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/jolo-cdk-to-sst-Main/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "jolo-cdk-to-sst-Main"
+    },
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    }
+  }
+}
